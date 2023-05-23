@@ -62,6 +62,7 @@ g.add_edge(1, 2)
 g.add_edge(2, 0)
 g.add_edge(2, 3)
 g.add_edge(3, 3)
+g.add_edge(0, 4)
 
 # g.add_edge(0,1)
 # g.add_edge(0,2)
@@ -71,7 +72,7 @@ g.add_edge(3, 3)
 # g.add_edge(2,6)
 
 # g.add_edge(3,6)
-start_vertex=3
+start_vertex=0
 print("DFS traversal:")
 g.dfs(start_vertex)
 
