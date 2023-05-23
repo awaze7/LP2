@@ -62,6 +62,7 @@ g.add_edge(1, 2)
 g.add_edge(2, 0)
 g.add_edge(2, 3)
 g.add_edge(3, 3)
+g.add_edge(3, 5)
 g.add_edge(0, 4)
 
 # g.add_edge(0,1)
