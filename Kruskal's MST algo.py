@@ -26,7 +26,7 @@ class Graph:
         
         i=0 # index variable used for sorted edges
         
-        e=0 #index variable used for result
+        e=0 #index variable used for result[]
         
         self.graph=sorted(self.graph,key=lambda item: item[2])
         
