@@ -119,7 +119,15 @@ goal_state = [[1, 2, 3], [4, 5, 6], [7, 8, 0]]
 
 solve_puzzle(start_state)
 
-
+#time complexity of O(b^d), where b is the branching factor(number of possible moves) and d is the depth of the optimal solution.
+#The A* algorithm continues exploring states until it finds the goal state or exhausts all possible states. 
+# The time complexity of the A* algorithm depends on the number of states explored. In the worst case, 
+# it explores all possible states, resulting in a time complexity of O(b^d), where b is the branching factor
+# (number of possible moves) and d is the depth of the optimal solution.
+#Space complexity of O(b^d),  dominated by the space required for the open list and closed set.The maximum size of the open list can be proportional to the number of states explored during the search. In the worst 
+# case, where all states need to be explored, the space complexity of the open list is O(b^d) due to the branching factor and 
+# depth of the optimal solution.The closed set stores unique puzzle configurations encountered during the search. The space complexity of the closed set is 
+# also O(b^d) in the worst case.
 
 # def get_user_input():
 #     print("Enter the start state:")
