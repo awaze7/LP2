@@ -1,5 +1,5 @@
 #BRANCH AND BOUND
-N=8
+N=int(input("Enter N:"))
 def printSolution(board):
     print("The Board with %d Queens:" %N)
     for i in range(N):
@@ -57,7 +57,7 @@ def solveNQueens():
     for r in range(N):
         for c in range(N):
             slashCode[r][c]=r+c
-            backslashCode[r][c]=r-c+7
+            backslashCode[r][c]=r-c+(N-1)
             
     if(solveNQueensUtil(board,0,slashCode,backslashCode,rowLookUp,slashCodeLookup,backslashCodeLookup)==False):
         print("Solution does not exist")
@@ -74,7 +74,7 @@ solveNQueens()
 
 
 #BackTracking
-N=8
+
 def printSolution(board):
     print("The Board with %d Queens with BackTracking:" %N)
     for i in range(N):
