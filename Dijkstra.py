@@ -57,3 +57,5 @@ if __name__=="__main__":
              [0, 0, 2, 0, 0, 0, 6, 7, 0]
             ]
     g.dijkstra(0)
+
+  #TC:O(V*V) SC:O(V*V)
